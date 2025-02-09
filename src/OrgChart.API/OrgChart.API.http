@@ -1,0 +1,6 @@
+@OrgChart.API_HostAddress = http://localhost:5058/api
+
+GET {{OrgChart.API_HostAddress}}/employee/
+Accept: application/json
+
+###
