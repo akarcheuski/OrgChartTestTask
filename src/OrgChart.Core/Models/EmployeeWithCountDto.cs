@@ -1,0 +1,1 @@
+﻿public record EmployeeWithCountDto(int Id, string Name, int? ManagerId, int SubordinateCount);

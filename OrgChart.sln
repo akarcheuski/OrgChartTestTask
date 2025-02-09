@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrgChart.API", "src\OrgChart.API\OrgChart.API.csproj", "{76E5CA5C-CFF2-49D7-A30B-43614EA3C94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrgChart.Core", "src\OrgChart.Core\OrgChart.Core.csproj", "{2BF271C5-8503-4D3D-A4D3-7C097BED3E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrgChart.Infrastructure", "src\OrgChart.Infrastructure\OrgChart.Infrastructure.csproj", "{00875991-699F-4642-B8B1-B33CC64B044B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B3E7DFA0-B48E-46D5-BD5A-83B5EB47FC91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrgChart.IntegrationTests", "src\tests\OrgChart.IntegrationTests\OrgChart.IntegrationTests.csproj", "{66E166CB-10FA-4B62-900D-5E95CAE35864}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B469BEF-6BCD-4281-8608-03B317B64242}"
+	ProjectSection(SolutionItems) = preProject
+		src\.editorconfig = src\.editorconfig
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E5CA5C-CFF2-49D7-A30B-43614EA3C94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E5CA5C-CFF2-49D7-A30B-43614EA3C94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E5CA5C-CFF2-49D7-A30B-43614EA3C94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E5CA5C-CFF2-49D7-A30B-43614EA3C94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF271C5-8503-4D3D-A4D3-7C097BED3E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF271C5-8503-4D3D-A4D3-7C097BED3E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF271C5-8503-4D3D-A4D3-7C097BED3E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF271C5-8503-4D3D-A4D3-7C097BED3E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00875991-699F-4642-B8B1-B33CC64B044B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00875991-699F-4642-B8B1-B33CC64B044B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00875991-699F-4642-B8B1-B33CC64B044B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00875991-699F-4642-B8B1-B33CC64B044B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E166CB-10FA-4B62-900D-5E95CAE35864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E166CB-10FA-4B62-900D-5E95CAE35864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E166CB-10FA-4B62-900D-5E95CAE35864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E166CB-10FA-4B62-900D-5E95CAE35864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66E166CB-10FA-4B62-900D-5E95CAE35864} = {B3E7DFA0-B48E-46D5-BD5A-83B5EB47FC91}
+	EndGlobalSection
+EndGlobal
