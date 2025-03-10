@@ -62,7 +62,7 @@ public class EmployeeRepository : IEmployeeRepository
     public async Task<bool> HasCycle(int employeeId, int newManagerId)
     {
         var employee = await GetByIdOrDefault(employeeId);
-        return employee.Subordinates.Any(s => s.Id == newManagerId);
+        return await CheckCycle(employee, newManagerId);
     }
 
     public async Task<int> CalcDepth(Employee? employee, int depth = 1)
@@ -70,5 +70,17 @@ public class EmployeeRepository : IEmployeeRepository
         foreach (var subordinate in employee.Subordinates)
             await CalcDepth(subordinate, depth + 1);
         return depth;
+    }
+
+    public async Task<bool> CheckCycle(Employee? employee, int managerId)
+    {
+        foreach (var subordinate in employee.Subordinates)
+        {
+            if (subordinate.Id == managerId)
+                return true;
+            else
+                await CheckCycle(subordinate, managerId);
+        }
+        return false;
     }
 }
